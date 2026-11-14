@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Smart Parking Management System</h1>
+    <p>Manage parking slots easily and efficiently</p>
+</header>
+
+<nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#booking">Book Parking</a>
+    <a href="#about">About</a>
+</nav>
+
+<main>
+    <section id="dashboard">
+        <h2>Parking Dashboard</h2>
+        <div class="summary">
+            <div class="card">
+                <h3>Total Slots</h3>
+                <p id="totalSlots">12</p>
+            </div>
+            <div class="card">
+                <h3>Available</h3>
+                <p id="availableSlots">12</p>
+            </div>
+            <div class="card">
+                <h3>Occupied</h3>
+                <p id="occupiedSlots">0</p>
+            </div>
+        </div>
+
+        <h2>Parking Slots</h2>
+        <div id="parkingSlots" class="parking-grid"></div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Parking Slot</h2>
+        <form id="bookingForm">
+            <label for="customerName">Customer Name</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+
+            <label for="vehicleNumber">Vehicle Number</label>
+            <input type="text" id="vehicleNumber" placeholder="Enter vehicle number" required>
+
+            <label for="slotNumber">Select Parking Slot</label>
+            <select id="slotNumber" required>
+                <option value="">Choose an available slot</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>This system helps users view available parking slots, book parking spaces, and manage vehicle parking details.</p>
+        <p>Developed by: Sneha Rajashekhar Karidyamannanavar</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Smart Parking Management System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
